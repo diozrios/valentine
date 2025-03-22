@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <head>
-  
+  Cupido 💘
 </head>
 
 <body>
-  heyhey
+  <div>Copia il link da mandare alla tua crush.<br>La tua crush è...</div>
+  <div>
+    <button onclick="copyText(false)">Maschio</button>
+    o
+    <button onclick="copyText(true)">Femmina</button>
+  </div>
+
+  <script>
+    function copyText(mof) {
+        var copyText = window.location.href;
+        if (mof) {
+          copyText =+ "/female";
+        } else {
+          copyText =+ "/male";
+        }
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // Per dispositivi mobili
+        document.execCommand("copy");
+        alert("Testo copiato: " + copyText.value);
+    }
+</script>
 </body>

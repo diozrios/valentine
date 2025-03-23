@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<head>
-  Cupido 💘
-</head>
-
-<body>
-  <div>Copia il link da mandare alla tua crush.<br>La tua crush è...</div>
-  <div>
-    <button onclick="copyText(false)">Maschio</button>
-    o
-    <button onclick="copyText(true)">Femmina</button>
-  </div>
-
-  <script>
-    function copyText(mof) {
-        var copyText = window.location.href;
-        if (mof) {
-          copyText =+ "/female";
-        } else {
-          copyText =+ "/male";
-        }
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); // Per dispositivi mobili
-        document.execCommand("copy");
-        alert("Testo copiato: " + copyText.value);
-    }
-</script>
-</body>
+<html lang="it">
+    <head>
+        <title>San Valentino 💘</title>
+        <link rel="icon" href="./images/heart.png">
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="container">
+            <img alt="noi" src="./images/cute-bear.gif">
+            <p id="domanda">Vuoi essere la mia Valentina? 💞</p>
+            <button class="button-29" type="button" id="yes" onclick="yes()"><span>SÌ</span></button>
+            <button class="button-29" type="button" id="no" onclick="no()"><span>NO</span></button>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,17 +1,7 @@
-@font-face {
-    font-family: Valentine;
-    src: url(./valentine_tw/VALEC___.TTF);
-    src: url(./valentine_tw/VALENTIN.TTF);
-    src: url(./valentine_tw/VALEO___.TTF);
-}
-
-@font-face {
-    font-family: ProtestStrike;
-    src: url(./ProtestStrike-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
 * {
-    font-family: Valentine;
+    font-family: "Love Ya Like A Sister";
     font-size: 36px;
     text-align: center;
 }
@@ -41,6 +31,9 @@ img {
 }
 
 .button-29 {
+    font-family: "Love Ya Like A Sister";
+    font-weight: 900;
+    text-align: center;
     align-items: center;
     appearance: none;
     border: 0;
@@ -54,17 +47,21 @@ img {
     line-height: 1;
     list-style: none;
     overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
     position: relative;
     text-align: left;
     text-decoration: none;
     transition: box-shadow .15s,transform .15s;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow,transform;
+}
+
+.button-29 span {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .button-29:focus {
